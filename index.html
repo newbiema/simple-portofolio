@@ -9,13 +9,13 @@
     <script src="/main.js"></script>
     <link rel="icon" href="/img/avatar.png">
 </head>
-<body>
+<body class="bg-white">
 
 <!--NAVBAR-->
-<header class="bg-gray-900">
+<header class="bg-gray-900 sticky">
   <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
     <div class="flex-1">
-      <a class="btn btn-ghost text-white text-xl px-10">evanWeb</a>
+      <a class="btn btn-ghost text-white font-mono text-xl px-10">Evanwebs</a>
     </div>
   
       <div class="font- bold dropdown dropdown-end">
@@ -24,17 +24,14 @@
             <img alt="" src="/img/avatar.png" />
           </div>
         </div>
-        <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-          <li>
-            <a class="justify-between">
-              
-                <a href="#about">About</a>
-                
-            </a>
-          </li>
-          <li><a href="#project">Project</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="md:light-text-black">
+          <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+            <li class="font-bold font-mono " ><a href="#project">About</a></li>
+            <li class="font-bold font-mono " ><a href="#project">Project</a></li>
+            <li class="font-bold font-mono "><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
@@ -48,14 +45,18 @@
   <div class="hero-content flex-col lg:flex-row">
     <img src="/img/profil.JPG" class="w-64 h-64 object-cover rounded-lg shadow-2xl" />
     <div>
-      <h1 class="text-3xl text-center text-black  font-bold">Welcome</h1>
+      <h1 class="text-3xl text-center text-black font-bold">Haiii👋</h1>
       <p class="py-6 text-black font-serif">
-        Hello, I'm Evan, a junior front end developer with a high passion for
+        I'm Evan, a junior front end developer with a high passion for
         continue to learn and grow in the world of web development.
       </p>
-        
-      <button class="btn btn-primary bg-black text-white">
-        <a href="https://drive.google.com/file/d/1nTboSci7ZTbWVDFX-_qXv5VzpTvUUlJh/view?usp=drive_link" target="_blank">Download CV</a></button>
+      <div class="btn btn-primary mr-4 text-white #1d4ed8 hover:bg-white border-gray-200 hover:text-black">
+        <button><a href="whatsapp://send?text=Hai evan 👋&phone=+6287892219615" target="_blank">Chat Me</a></button>
+        </div>
+        <div class="btn btn-primary  text-white bg-black hover:bg-white border-gray-200 hover:text-black">
+          <button><a href="https://drive.google.com/file/d/1nTboSci7ZTbWVDFX-_qXv5VzpTvUUlJh/view?usp=drive_link" target="_blank">Download CV</a></button>
+          </div>
+      
     </div>
   </div>
 </div>
@@ -63,114 +64,96 @@
 <!--END ISI-->
 
 <!--Project-->
-<article class="rounded-xl border border-gray-700 bg-gray-800 p-4 ">
-
-
-    <div id="project">
-      <h3 class="text-lg text-center font-medium text-white">My Project Collection</h3>
-
-      
-  <ul class="mt-4 space-y-2">
-    <li>
-      <a href="https://cuy-joki.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-        <strong class="font-medium text-white">CuyJoki Website</strong>
-
-        <p class="mt-1 text-xs font-medium text-gray-300">
-          CuyJoki is a simple website where jockeys do assignments 
-        </p>
-      </a>
-    </li>
-
-    <li>
-      <a href="https://desakembangkuning.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-        <strong class="font-medium text-white">Desa kembang kuning Website</strong>
-
-        <p class="mt-1 text-xs font-medium text-gray-300">
-          This is a simple website that I created using HTML+CSS+JavaScript
-        </p>
-      </a>
-    </li>
-
-    <li>
-      <a href="https://xii-1-ips-smansik.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-        <strong class="font-medium text-white">XII IPS 1 ver1 Website</strong>
-
-        <p class="mt-1 text-xs font-medium text-gray-300">
-          This is a simple website that I created using HTML+CSS+JavaScript
-        </p>
-      </a>
-    </li>
-
-    <li>
-      <a href="https://xii-ips-1-v2.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-        <strong class="font-medium text-white">XII IPS 1 ver2 Website</strong>
-
-        <p class="mt-1 text-xs font-medium text-gray-300">
-          This is a simple class website that I added a few features to
-        </p>
-      </a>
-    </li>
-
-    <li>
-      <a href="https://newbiema.github.io/Web_evan/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-        <strong class="font-medium text-white">MyPortofolio Website</strong>
-
-        <p class="mt-1 text-xs font-medium text-gray-300">
-          This is a simple portfolio website that uses a retro theme
-        </p>
-      </a>
-    </li>
-
-  <li>
-    <a href="https://github.com/newbiema/gabut/blob/main/Auto%20Spam%2B%20Koordinat%20Mouse.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-      <strong class="font-medium text-white">Automatic Spam</strong>
-      <p class="mt-1 text-xs font-medium text-gray-300">
-        This is a simple project using the Python programming language
-      </p>
-    </a>
-  </li>
-
-    <li>
-    <a href="https://github.com/newbiema/gabut/blob/main/Generate%20Foto.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-      <strong class="font-medium text-white">Generate Photo </strong>
-      <p class="mt-1 text-xs font-medium text-gray-300">
-        This is a simple project that generates photos using the Python programming language by utilizing the Replicate website API
-      </p>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://github.com/newbiema/gabut/blob/main/convert%20pdf%20python.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-      <strong class="font-medium text-white">Convert Image To Pdf </strong>
-      <p class="mt-1 text-xs font-medium text-gray-300">
-        This is a simple project to convert image files to PDF using the Python programming language
-      </p>
-    </a>
-  </li>
-
-  <li>
-    <a href="https://github.com/newbiema/gabut/blob/main/Filter%20Grafik%20Ps%202.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-pink-600">
-      <strong class="font-medium text-white">Ps2 Graphic Photo Trend </strong>
-      <p class="mt-1 text-xs font-medium text-gray-300">
-        This is a simple PS2 photo graph trend project using the Python programming language by utilizing the Replicate website API
-      </p>
-    </a>
-  </li>
-
-  
-</ul>
-</article>
-
+<div class="max-w-7xl mx-auto p-6" id="project">
+  <article class="rounded-xl border border-gray-700 bg-gray-800 p-6">
+    <h3 class="text-lg text-center font-medium font-mono text-white mb-6">My Project Collections</h3>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <li>
+        <a href="https://cuy-joki.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">CuyJoki Website</strong>
+          <img src="/img/cuyjoki.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">CuyJoki is a simple website where jockeys do assignments</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://desakembangkuning.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Desa Kembang Kuning Website</strong>
+          <img src="/img/kembangkuning (1).png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://xii-1-ips-smansik.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">XII IPS 1 ver1 Website</strong>
+          <img src="/img/kelas v1.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://xii-ips-1-v2.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">XII IPS 1 ver2 Website</strong>
+          <img src="/img/kelas v2.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple class website that I added a few features to</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://newbiema.github.io/Web_evan/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">MyPortfolio Website</strong>
+          <img src="/img/retro.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple portfolio website that uses a retro theme</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://sora-top-up.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Sora Top Up Website</strong>
+          <img src="/img/top up.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple portfolio website that uses a retro theme</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://ayu-songket-tetebatu.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Ayu Songket Website</strong>
+          <img src="/img/Ayu Songket.png" alt="" class="mt-2 mb-2 w-full h-auto">
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple portfolio website that uses a retro theme</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/newbiema/gabut/blob/main/Auto%20Spam%2B%20Koordinat%20Mouse.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Automatic Spam</strong>
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project using the Python programming language</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/newbiema/gabut/blob/main/Generate%20Foto.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Generate Photo</strong>
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project that generates photos using the Python programming language by utilizing the Replicate website API</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/newbiema/gabut/blob/main/convert%20pdf%20python.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Convert Image To Pdf</strong>
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project to convert image files to PDF using the Python programming language</p>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/newbiema/gabut/blob/main/Filter%20Grafik%20Ps%202.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+          <strong class="font-medium font-mono text-white">Ps2 Graphic Photo Trend</strong>
+          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple PS2 photo graph trend project using the Python programming language by utilizing the Replicate website API</p>
+        </a>
+      </li>
+    </ul>
+  </article>
+</div>
 
 
 <!--End Project-->
 
 <!--FOOTER-->
-<footer id="contact" class="bg-gray-900">
-  <div class="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
+<footer id="contact" class="bg-gray-900 mt-7">
+  <div class="mx-auto max-w-5xl  py-16 sm:px-6 lg:px-8">
    
 
-    <p class="mx-auto font-bold mt-6 max-w-md text-center leading-relaxed text-white">
+    <p class="mx-auto max-w-md text-center font-serif  leading-relaxed text-white">
       Follow My Sosial Media
     </p>
 
