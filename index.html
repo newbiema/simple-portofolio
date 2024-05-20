@@ -8,143 +8,129 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/main.js"></script>
     <link rel="icon" href="/img/avatar.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Danfo&family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=VT323&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white">
+<body class="bg-gray-50 text-gray-800">
 
-<!--NAVBAR-->
-<header class="bg-gray-900 sticky">
-  <div class="mx-auto flex h-16 max-w-screen-xl items-center gap-8 px-4 sm:px-6 lg:px-8">
-    <div class="flex-1">
-      <a class="btn btn-ghost text-white font-mono text-xl px-10">Evanwebs</a>
-    </div>
-  
-      <div class="font- bold dropdown dropdown-end">
-        <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img alt="" src="/img/avatar.png" />
+  <!-- NAVBAR -->
+  <header class="bg-gray-900 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8">
+          <a class="text-white font-mono font-bold text-2xl" href="#about">Evanwebs</a>
+          <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                      <img alt="User avatar" src="/img/avatar.png" />
+                  </div>
+              </div>
+              <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                  <li><a href="#project" class="font-semibold transition duration-300 ease-in-out dark:text-white">Project</a></li>
+                  <li><a href="#contact" class="font-semibold transition duration-300 ease-in-out dark:text-white">Contact</a></li>
+              </ul>
           </div>
-        </div>
-        <div class="md:light-text-black">
-          <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-            <li class="font-bold font-mono " ><a href="#about">About</a></li>
-            <li class="font-bold font-mono " ><a href="#project">Project</a></li>
-            <li class="font-bold font-mono "><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-
       </div>
-    </div>
-  </div>
-</header>
+  </header>
+  <!-- END NAVBAR -->
 
-<!--END NAVBAR-->
+  <!-- CONTENT -->
+  <main class="flex min-h-screen items-center ml-4 mr-4 justify-center py-10"  id="about">
+      <div class="flex flex-col items-center space-y-8">
+          <div class="rounded-xl overflow-hidden relative text-center p-6 group max-w-sm hover:shadow-2xl transition-all duration-500 shadow-xl bg-white">
+              <div class="transform transition-transform group-hover:scale-105">
+                  <img src="/img/profil.JPG" alt="Profile picture" class="rounded-box w-32">
+              </div>
+              <div class="mt-4">
 
-
-<!--ISI-->
-<div id="about" class="hero min-h-screen bg-white">
-  <div class="hero-content flex-col lg:flex-row">
-    <img src="/img/profil.JPG" class="w-64 h-64 object-cover rounded-lg shadow-2xl" />
-    <div>
-      <h1 class="text-3xl text-center text-black font-bold">Haiii👋</h1>
-      <p class="py-6 text-black font-serif">
-        I'm Evan, a junior front end developer with a high passion for
-        continue to learn and grow in the world of web development.
-      </p>
-      <div class="btn btn-primary mr-4 text-white #1d4ed8 hover:bg-white border-gray-200 hover:text-black">
-        <button><a href="whatsapp://send?text=Hai evan 👋&phone=+6287892219615" target="_blank">Chat Me</a></button>
-        </div>
-        <div class="btn btn-primary  text-white bg-black hover:bg-white border-gray-200 hover:text-black">
-          <button><a href="https://drive.google.com/file/d/1gQIT-uKnQkbP_PtCD4cM9z2UgQaZ1y57/view?usp=drive_link" target="_blank">Download CV</a></button>
+                  <p class="text-gray-500 font-serif text-sm">@Front-End Dev</p>
+              </div>
+              <div class="flex space-x-4 mt-4 ml-3">
+                  <a href="https://www.linkedin.com/in/evan-jamaq-9b7159283/" class="text-gray-600 hover:text-blue-500 transition-colors">
+                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M22.23 0H1.77C.79 0 0 .77 0 1.75v20.49C0 23.24.79 24 1.77 24h20.46c.97 0 1.77-.77 1.77-1.75V1.75C24 .77 23.2 0 22.23 0zM7.09 20.45H3.56V8.92h3.53v11.53zm-1.77-13.1c-1.12 0-1.82-.75-1.82-1.68 0-.95.72-1.68 1.85-1.68s1.82.73 1.82 1.68c0 .93-.7 1.68-1.86 1.68zM20.45 20.45h-3.53v-6.17c0-1.47-.53-2.47-1.85-2.47-1.01 0-1.61.68-1.88 1.34-.1.24-.12.57-.12.9v6.4h-3.53s.05-10.39 0-11.53h3.53v1.63c.47-.73 1.31-1.77 3.2-1.77 2.34 0 4.1 1.53 4.1 4.81v6.86z" />
+                      </svg>
+                  </a>
+                  <a href="mailto:evanjamaq123@gmail.com" class="text-gray-600 hover:text-red-500 transition-colors">
+                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm0 2v.01l8 5.01 8-5V6l-8 5-8-5zm0 2.7V18h16v-7.3l-8 5-8-5z" />
+                      </svg>
+                  </a>
+                  <a href="https://github.com/newbiema" class="text-gray-600 hover:text-black transition-colors">
+                      <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+                      </svg>
+                  </a>
+              </div>
           </div>
-      
+          <aside class="mt-4 bg-black text-white p-6 rounded-lg w-full max-w-lg font-mono animate-fadeInUp">
+              <div class="flex justify-between items-center">
+                  <div class="flex space-x-2">
+                      <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                      <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                      <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                  </div>
+                  <p class="text-sm">bash</p>
+              </div>
+              <div class="mt-4">
+                  <p class="text-green-400">$ console.log(hello) </p>
+                  <p class="text-green-400">node.js</p>
+                  <p class="text-white mt-2 mb-2">I'm Evan, a junior front end developer with a high passion for continue to learn and grow in the world of web development.</p>
+                  <p class="text-green-400">$</p>
+              </div>
+          </aside>
+      </div>
+  </main>
+    
+    <!--Project-->
+    <div class="max-w-7xl mx-auto p-6" id="project">
+      <article class="rounded-xl border border-gray-700 bg-black p-6">
+        <h3 class="text-lg text-center font-medium font-mono text-white mb-6">My Project Collections</h3>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://cuy-joki.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">CuyJoki Website</strong>
+              <img src="/img/cuyjoki.png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">CuyJoki is a simple website where jockeys do assignments</p>
+            </a>
+          </li>
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://desakembangkuning.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">Desa Kembang Kuning Website</strong>
+              <img src="/img/kembangkuning (1).png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
+            </a>
+          </li>
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://xii-1-ips-smansik.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">XII IPS 1 ver1 Website</strong>
+              <img src="/img/kelas v1.png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
+            </a>
+          </li>
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://xii-ips-1-v2.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">XII IPS 1 ver2 Website</strong>
+              <img src="/img/kelas v2.png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple class website that I added a few features to</p>
+            </a>
+          </li>
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://newbiema.github.io/Web_evan/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">MyPortfolio Website</strong>
+              <img src="/img/retro.png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple portfolio website that uses a retro theme</p>
+            </a>
+          </li>
+          <li class="transform transition duration-500 hover:scale-105">
+            <a href="https://sora-top-up.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
+              <strong class="font-medium font-mono text-white">Sora Top Up Website</strong>
+              <img src="/img/top up.png" alt="" class="mt-2 mb-2 w-full h-auto">
+              <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a website where people can buy diamonds for games</p>
+            </a>
+          </li>
+        </ul>
+      </article>
     </div>
-  </div>
-</div>
-
-<!--END ISI-->
-
-<!--Project-->
-<div class="max-w-7xl mx-auto p-6" id="project">
-  <article class="rounded-xl border border-gray-700 bg-gray-800 p-6">
-    <h3 class="text-lg text-center font-medium font-mono text-white mb-6">My Project Collections</h3>
-    <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <li>
-        <a href="https://cuy-joki.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">CuyJoki Website</strong>
-          <img src="/img/cuyjoki.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">CuyJoki is a simple website where jockeys do assignments</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://desakembangkuning.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Desa Kembang Kuning Website</strong>
-          <img src="/img/kembangkuning (1).png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://xii-1-ips-smansik.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">XII IPS 1 ver1 Website</strong>
-          <img src="/img/kelas v1.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website that I created using HTML+CSS+JavaScript</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://xii-ips-1-v2.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">XII IPS 1 ver2 Website</strong>
-          <img src="/img/kelas v2.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple class website that I added a few features to</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://newbiema.github.io/Web_evan/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">MyPortfolio Website</strong>
-          <img src="/img/retro.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple portfolio website that uses a retro theme</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://sora-top-up.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Sora Top Up Website</strong>
-          <img src="/img/top up.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website for purchasing game items</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://ayu-songket-tetebatu.vercel.app/" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Ayu Songket Website</strong>
-          <img src="/img/Ayu Songket.png" alt="" class="mt-2 mb-2 w-full h-auto">
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple website for ordering traditional songket cloth typical of Lombok Island</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/newbiema/gabut/blob/main/Auto%20Spam%2B%20Koordinat%20Mouse.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Automatic Spam</strong>
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project using the Python programming language</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/newbiema/gabut/blob/main/Generate%20Foto.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Generate Photo</strong>
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project that generates photos using the Python programming language by utilizing the Replicate website API</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/newbiema/gabut/blob/main/convert%20pdf%20python.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Convert Image To Pdf</strong>
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple project to convert image files to PDF using the Python programming language</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/newbiema/gabut/blob/main/Filter%20Grafik%20Ps%202.py" class="block h-full rounded-lg border border-gray-700 p-4 hover:border-white">
-          <strong class="font-medium font-mono text-white">Ps2 Graphic Photo Trend</strong>
-          <p class="mt-1 text-xs font-medium font-serif text-gray-300">This is a simple PS2 photo graph trend project using the Python programming language by utilizing the Replicate website API</p>
-        </a>
-      </li>
-    </ul>
-  </article>
-</div>
-
 
 <!--End Project-->
 
@@ -154,7 +140,7 @@
    
 
     <p class="mx-auto max-w-md text-center font-serif  leading-relaxed text-white">
-      Follow My Sosial Media
+      Contact Me
     </p>
 
     <ul class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
@@ -175,25 +161,20 @@
           </svg>
         </a>
       </li>
-
-
       <li>
         <a
-          href="https://github.com/newbiema"
+          href="whatsapp://send?text=Hai Evan👋&phone=+6287892219615"
           rel="noreferrer"
           target="_blank"
           class="text-gray-700 transition hover:text-gray-700/75 text-white dark:hover:text-white/75"
         >
-          <span class="sr-only">GitHub</span>
-          <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              fill-rule="evenodd"
-              d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-              clip-rule="evenodd"
-            />
-          </svg>
+          <span class="sr-only">WhatsApp</span>
+      <svg class=""
+         fill="#fdfcfc" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.00 308.00" xml:space="preserve" stroke="#fdfcfc"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g id="XMLID_468_"> <path id="XMLID_469_" d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z"></path> <path id="XMLID_470_" d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z"></path> </g> </g>
+        </svg>
         </a>
       </li>
+      
 
     </ul>
   </div>
